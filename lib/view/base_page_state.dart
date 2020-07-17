@@ -8,7 +8,8 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
   Widget drawer(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width / 1.5,
-      color: Theme.of(context).primaryColor,
+//      color: Theme.of(context).backgroundColor,
+      color: AppTheme.current.primaryBackgroundColor,
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[

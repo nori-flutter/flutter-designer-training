@@ -13,6 +13,9 @@ class DarkTheme implements AppThemeBase {
   }
 
   @override
+  bool get isDark => true;
+
+  @override
   Color get primaryTextColor => Colors.white;
 
   @override
@@ -23,6 +26,12 @@ class DarkTheme implements AppThemeBase {
 
   @override
   Color get secondaryBackgroundColor => Colors.orange;
+
+  @override
+  Color get primaryDrawerBackgroundColor => primaryBackgroundColor;
+
+  @override
+  Color get secondaryDrawerBackgroundColor => secondaryBackgroundColor;
 
   @override
   Color get primaryHeaderBackgroundColor => Colors.deepOrange;

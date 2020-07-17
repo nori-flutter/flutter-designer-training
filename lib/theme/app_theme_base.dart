@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 abstract class AppThemeBase {
 
+  bool get isDark;
+
   Color get primaryTextColor;
   Color get secondaryTextColor;
 
@@ -10,6 +12,9 @@ abstract class AppThemeBase {
 
   Color get primaryHeaderBackgroundColor;
   Color get secondaryHeaderBackgroundColor;
+
+  Color get primaryDrawerBackgroundColor;
+  Color get secondaryDrawerBackgroundColor;
 
   Color get primaryFooterBackgroundColor;
   Color get secondaryFooterBackgroundColor;
