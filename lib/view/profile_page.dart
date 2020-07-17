@@ -12,7 +12,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends BasePageState<ProfilePage> {
-
   Widget _contactButton() {
     return Container(
       width: MediaQuery.of(context).size.width,
@@ -100,6 +99,21 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                   height: 20,
                 ),
                 _contactButton(),
+                Row(
+                  children: <Widget>[
+                    Text("Profile Description:",
+                        style: TextStyle(
+                            color: AppTheme.current.primaryTextColor,
+                            fontWeight: FontWeight.bold)),
+                  ],
+                ),
+                RichText(
+                  text: TextSpan(
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra euismod mi in porta. Nulla egestas diam auctor rhoncus sollicitudin. Ut congue facilisis felis, eu malesuada ante porttitor at. Nunc tincidunt lectus at ex molestie, non ultricies leo laoreet. In ullamcorper erat dolor, nec mollis velit efficitur id. Aliquam sem turpis, congue a sem id, facilisis imperdiet mi. Morbi vehicula ornare metus et tristique. Morbi odio sem, ornare et dolor et, convallis fermentum est. Aenean felis tortor, feugiat ut laoreet nec, ullamcorper in quam. Maecenas luctus urna lacus, ut posuere mauris bibendum ut. Mauris ac tincidunt lectus, nec facilisis risus. Sed dignissim mauris aliquet orci aliquet, ac viverra lectus luctus. Aliquam euismod sem ut urna rhoncus, quis pulvinar tellus tristique. Praesent vel auctor nulla. Phasellus id bibendum diam, ut rhoncus arcu.',
+                    style: TextStyle(
+                        color: AppTheme.current.primaryTextColor, fontWeight: FontWeight.normal, fontSize: 18),
+                  ),
+                ),
               ],
             ),
           ),
