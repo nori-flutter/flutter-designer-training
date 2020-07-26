@@ -4,6 +4,8 @@ abstract class AppThemeBase {
 
   bool get isDark;
 
+  ThemeData get theme;
+
   Color get primaryTextColor;
   Color get secondaryTextColor;
 

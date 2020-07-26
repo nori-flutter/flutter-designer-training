@@ -16,6 +16,23 @@ class DarkTheme implements AppThemeBase {
   bool get isDark => true;
 
   @override
+  ThemeData get theme {
+    return ThemeData(
+      primarySwatch: Colors.black,
+      backgroundColor: primaryBackgroundColor,
+      iconTheme: IconThemeData(color: Colors.white),
+      // This makes the visual density adapt to the platform that you run
+      // the app on. For desktop platforms, the controls will be smaller and
+      // closer together (more dense) than on mobile platforms.
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    );
+  }
+
+  Color get unselectedWidgetColor => Colors.white70;// default: Colors.white70 - see ThemeData
+
+  Color get accentColor => Colors.tealAccent[200];// default: Colors.tealAccent[200] - see ThemeData
+
+  @override
   Color get primaryTextColor => Colors.white;
 
   @override

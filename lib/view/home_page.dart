@@ -39,7 +39,7 @@ class _HomePageState extends BasePageState<HomePage> {
                 )),
                 GFCard(
                   boxFit: BoxFit.cover,
-                  imageOverlay: AssetImage('your asset image'),
+//                  imageOverlay: AssetImage('assets/images/art.png'),
                   title: GFListTile(
                     avatar: GFAvatar(),
                     title: Text('Card Title'),
@@ -59,7 +59,7 @@ class _HomePageState extends BasePageState<HomePage> {
                 ),
                 GFCard(
                   boxFit: BoxFit.cover,
-                  image: Image.asset('your asset image'),
+//                  image: Image.asset('assets/images/art.png'),
                   title: GFListTile(
                       avatar:GFAvatar(),
                       title: Text('Card Title'),

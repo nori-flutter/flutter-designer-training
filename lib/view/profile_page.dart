@@ -12,7 +12,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends BasePageState<ProfilePage> {
-
   bool _isFavorite = false;
 
   Widget _contactButton(String label) {
@@ -71,9 +70,7 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                               iconSize: 36,
                               alignment: Alignment.centerRight,
                               icon: Icon(
-                                _isFavorite
-                                    ? Icons.star
-                                    : Icons.star_border,
+                                _isFavorite ? Icons.star : Icons.star_border,
                                 color: _isFavorite
                                     ? AppTheme.current.favoriteOnIconColor
                                     : AppTheme.current.favoriteOffIconColor,
@@ -162,7 +159,8 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                             spreadRadius: 0)
                       ], color: AppTheme.current.primaryButtonColor),
                   child: ExpansionTile(
-                    tilePadding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                    tilePadding:
+                        EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                     childrenPadding: EdgeInsets.zero,
                     title: Container(
                       child: Text(
@@ -176,7 +174,8 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                     ),
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                         color: AppTheme.current.primaryBackgroundColor,
                         child: RichText(
                           text: TextSpan(
@@ -208,7 +207,8 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                             spreadRadius: 0)
                       ], color: AppTheme.current.primaryButtonColor),
                   child: ExpansionTile(
-                    tilePadding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                    tilePadding:
+                        EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                     childrenPadding: EdgeInsets.zero,
                     title: Container(
                       child: Text(
@@ -222,12 +222,13 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                     ),
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                         color: AppTheme.current.primaryBackgroundColor,
                         child: RichText(
                           text: TextSpan(
                             text:
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra euismod mi in porta. Nulla egestas diam auctor rhoncus sollicitudin. Ut congue facilisis felis, eu malesuada ante porttitor at. Nunc tincidunt lectus at ex molestie, non ultricies leo laoreet. In ullamcorper erat dolor, nec mollis velit efficitur id. Aliquam sem turpis, congue a sem id, facilisis imperdiet mi. Morbi vehicula ornare metus et tristique. Morbi odio sem, ornare et dolor et, convallis fermentum est. Aenean felis tortor, feugiat ut laoreet nec, ullamcorper in quam. Maecenas luctus urna lacus, ut posuere mauris bibendum ut. Mauris ac tincidunt lectus, nec facilisis risus. Sed dignissim mauris aliquet orci aliquet, ac viverra lectus luctus. Aliquam euismod sem ut urna rhoncus, quis pulvinar tellus tristique. Praesent vel auctor nulla. Phasellus id bibendum diam, ut rhoncus arcu.',
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra euismod mi in porta. Nulla egestas diam auctor rhoncus sollicitudin. Ut congue facilisis felis, eu malesuada ante porttitor at. Nunc tincidunt lectus at ex molestie, non ultricies leo laoreet. In ullamcorper erat dolor, nec mollis velit efficitur id. Aliquam sem turpis, congue a sem id, facilisis imperdiet mi. Morbi vehicula ornare metus et tristique. Morbi odio sem, ornare et dolor et, convallis fermentum est. Aenean felis tortor, feugiat ut laoreet nec, ullamcorper in quam. Maecenas luctus urna lacus, ut posuere mauris bibendum ut. Mauris ac tincidunt lectus, nec facilisis risus. Sed dignissim mauris aliquet orci aliquet, ac viverra lectus luctus. Aliquam euismod sem ut urna rhoncus, quis pulvinar tellus tristique. Praesent vel auctor nulla. Phasellus id bibendum diam, ut rhoncus arcu.',
                             style: TextStyle(
                                 color: AppTheme.current.primaryTextColor,
                                 fontWeight: FontWeight.normal,
@@ -254,7 +255,9 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                             spreadRadius: 0)
                       ], color: AppTheme.current.primaryButtonColor),
                   child: ExpansionTile(
-                    tilePadding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                    key: Key('expansion3'),
+                    tilePadding:
+                        EdgeInsets.symmetric(horizontal: 20, vertical: 0),
                     childrenPadding: EdgeInsets.zero,
                     title: Container(
                       child: Text(
@@ -268,12 +271,13 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                     ),
                     children: <Widget>[
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                         color: AppTheme.current.primaryBackgroundColor,
                         child: RichText(
                           text: TextSpan(
                             text:
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra euismod mi in porta. Nulla egestas diam auctor rhoncus sollicitudin. Ut congue facilisis felis, eu malesuada ante porttitor at. Nunc tincidunt lectus at ex molestie, non ultricies leo laoreet. In ullamcorper erat dolor, nec mollis velit efficitur id. Aliquam sem turpis, congue a sem id, facilisis imperdiet mi. Morbi vehicula ornare metus et tristique. Morbi odio sem, ornare et dolor et, convallis fermentum est. Aenean felis tortor, feugiat ut laoreet nec, ullamcorper in quam. Maecenas luctus urna lacus, ut posuere mauris bibendum ut. Mauris ac tincidunt lectus, nec facilisis risus. Sed dignissim mauris aliquet orci aliquet, ac viverra lectus luctus. Aliquam euismod sem ut urna rhoncus, quis pulvinar tellus tristique. Praesent vel auctor nulla. Phasellus id bibendum diam, ut rhoncus arcu.',
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra euismod mi in porta. Nulla egestas diam auctor rhoncus sollicitudin. Ut congue facilisis felis, eu malesuada ante porttitor at. Nunc tincidunt lectus at ex molestie, non ultricies leo laoreet. In ullamcorper erat dolor, nec mollis velit efficitur id. Aliquam sem turpis, congue a sem id, facilisis imperdiet mi. Morbi vehicula ornare metus et tristique. Morbi odio sem, ornare et dolor et, convallis fermentum est. Aenean felis tortor, feugiat ut laoreet nec, ullamcorper in quam. Maecenas luctus urna lacus, ut posuere mauris bibendum ut. Mauris ac tincidunt lectus, nec facilisis risus. Sed dignissim mauris aliquet orci aliquet, ac viverra lectus luctus. Aliquam euismod sem ut urna rhoncus, quis pulvinar tellus tristique. Praesent vel auctor nulla. Phasellus id bibendum diam, ut rhoncus arcu.',
                             style: TextStyle(
                                 color: AppTheme.current.primaryTextColor,
                                 fontWeight: FontWeight.normal,
