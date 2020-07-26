@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_designer_training_app/theme/app_theme.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'base_page_state.dart';
@@ -11,7 +12,6 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends BasePageState<SearchPage> {
-
   final List list = [
     "Flutter",
     "React",
@@ -23,6 +23,7 @@ class _SearchPageState extends BasePageState<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppTheme.current.primaryHeaderBackgroundColor,
         title: Text('Search'),
       ),
       drawer: drawer(context),
@@ -32,8 +33,8 @@ class _SearchPageState extends BasePageState<SearchPage> {
           searchList: list,
           searchQueryBuilder: (query, list) {
             return list
-                .where((item) =>
-                item.toLowerCase().contains(query.toLowerCase()))
+                .where(
+                    (item) => item.toLowerCase().contains(query.toLowerCase()))
                 .toList();
           },
           overlaySearchListItemBuilder: (item) {

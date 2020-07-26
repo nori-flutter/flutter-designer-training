@@ -40,4 +40,7 @@ class AppTheme {
   static const TextStyle h4TextStyle = TextStyle(fontSize: 18, fontWeight: FontWeight.bold);
 
   static const TextStyle drawerMenuItemTextStyle = TextStyle(fontSize: 20);
+
+  static const double drawerMenuItemIconSize = 30;
+  static const double drawerMenuItemTextSize = 20;
 }

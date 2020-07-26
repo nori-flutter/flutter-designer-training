@@ -20,7 +20,10 @@ abstract class AppThemeBase {
   Color get secondaryFooterBackgroundColor;
 
   Color get primaryButtonColor;
+  Color get primaryButtonTextColor;
+
   Color get secondaryButtonColor;
+  Color get secondaryButtonTextColor;
 
   Color get primaryIconColor;
   Color get secondaryIconColor;
@@ -33,5 +36,10 @@ abstract class AppThemeBase {
 
   TextStyle get bottomNavTextStyle;
   TextStyle get bottomNavSelectedTextStyle;
+
+  Color get drawerMenuItemTextColor;
+
+  Color get favoriteOnIconColor;
+  Color get favoriteOffIconColor;
 
 }

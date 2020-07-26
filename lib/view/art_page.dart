@@ -16,6 +16,7 @@ class _ArtPageState extends BasePageState<ArtPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppTheme.current.primaryHeaderBackgroundColor,
         title: Text('Art Page'),
       ),
       drawer: drawer(context),
@@ -25,6 +26,7 @@ class _ArtPageState extends BasePageState<ArtPage> {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             margin: EdgeInsets.zero,
+            color: AppTheme.current.primaryBackgroundColor,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,

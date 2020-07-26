@@ -34,7 +34,7 @@ class LightTheme implements AppThemeBase {
   Color get secondaryDrawerBackgroundColor => secondaryBackgroundColor;
 
   @override
-  Color get primaryHeaderBackgroundColor => Colors.deepOrange;
+  Color get primaryHeaderBackgroundColor => Colors.indigo;
 
   @override
   Color get secondaryHeaderBackgroundColor => Colors.orange;
@@ -46,16 +46,22 @@ class LightTheme implements AppThemeBase {
   Color get secondaryFooterBackgroundColor => Colors.orange;
 
   @override
-  Color get primaryButtonColor => Colors.green;
+  Color get primaryButtonColor => Colors.blueAccent;
+
+  @override
+  Color get primaryButtonTextColor => Colors.white;
 
   @override
   Color get secondaryButtonColor => Colors.deepPurple;
 
   @override
-  Color get primaryIconColor => Colors.yellow;
+  Color get secondaryButtonTextColor => Colors.white;
 
   @override
-  Color get secondaryIconColor => Colors.yellowAccent;
+  Color get primaryIconColor => Colors.indigo;
+
+  @override
+  Color get secondaryIconColor => Colors.indigoAccent;
 
   @override
   Color get bottomNavIconColor => Colors.grey;
@@ -75,4 +81,12 @@ class LightTheme implements AppThemeBase {
   @override
   TextStyle get bottomNavTextStyle => TextStyle(color: Colors.grey);
 
+  @override
+  Color get drawerMenuItemTextColor => Colors.black;
+
+  @override
+  Color get favoriteOnIconColor => Colors.yellow;
+
+  @override
+  Color get favoriteOffIconColor => null;
 }

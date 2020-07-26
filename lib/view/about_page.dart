@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_designer_training_app/theme/app_theme.dart';
 
 class AboutPage extends StatefulWidget {
   AboutPage({Key key}) : super(key: key);
@@ -12,6 +13,7 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppTheme.current.primaryHeaderBackgroundColor,
         title: Text('About'),
       ),
     );

@@ -34,22 +34,28 @@ class DarkTheme implements AppThemeBase {
   Color get secondaryDrawerBackgroundColor => secondaryBackgroundColor;
 
   @override
-  Color get primaryHeaderBackgroundColor => Colors.deepOrange;
+  Color get primaryHeaderBackgroundColor => Colors.deepPurple;
 
   @override
-  Color get secondaryHeaderBackgroundColor => Colors.orange;
+  Color get secondaryHeaderBackgroundColor => Colors.deepPurpleAccent;
 
   @override
-  Color get primaryFooterBackgroundColor => Colors.deepOrange;
+  Color get primaryFooterBackgroundColor => Colors.deepPurple;
 
   @override
-  Color get secondaryFooterBackgroundColor => Colors.orange;
+  Color get secondaryFooterBackgroundColor => Colors.deepPurpleAccent;
 
   @override
-  Color get primaryButtonColor => Colors.green;
+  Color get primaryButtonColor => Colors.deepPurple;
+
+  @override
+  Color get primaryButtonTextColor => Colors.white;
 
   @override
   Color get secondaryButtonColor => Colors.deepPurple;
+
+  @override
+  Color get secondaryButtonTextColor => Colors.white;
 
   @override
   Color get primaryIconColor => Colors.yellow;
@@ -75,5 +81,13 @@ class DarkTheme implements AppThemeBase {
   @override
   TextStyle get bottomNavTextStyle => TextStyle(color: Colors.grey);
 
+  @override
+  Color get drawerMenuItemTextColor => Colors.white;
+
+  @override
+  Color get favoriteOnIconColor => Colors.yellow;
+
+  @override
+  Color get favoriteOffIconColor => null;
 
 }

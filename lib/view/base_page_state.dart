@@ -17,7 +17,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             child: Container(
               height: 50,
               child: CircleAvatar(
-                backgroundColor: Colors.orange,
+                backgroundColor: Colors.indigoAccent,
               ),
             ),
           ),
@@ -25,11 +25,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.home,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Home',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               selectedBottomNavIndex = 0;
@@ -40,11 +40,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.search,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Search',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               selectedBottomNavIndex = 1;
@@ -55,11 +55,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.account_box,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Profile',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               selectedBottomNavIndex = 2;
@@ -70,11 +70,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.art_track,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Art',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               selectedBottomNavIndex = 3;
@@ -85,11 +85,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.videogame_asset,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Physics',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               Navigator.pushNamed(context, ROUTE_PHYSICS);
@@ -99,11 +99,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.info,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'About',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               Navigator.pushNamed(context, ROUTE_ABOUT);
@@ -113,11 +113,11 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
             leading: Icon(
               Icons.settings,
               color: AppTheme.current.primaryIconColor,
-              size: 30,
+              size: AppTheme.drawerMenuItemIconSize,
             ),
             title: Text(
               'Settings',
-              style: AppTheme.drawerMenuItemTextStyle,
+              style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
               Navigator.pushNamed(context, ROUTE_SETTINGS);
