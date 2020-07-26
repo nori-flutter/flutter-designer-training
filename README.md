@@ -18,8 +18,11 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screen Captures
 
-<img src="https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_1.png?raw=true" width="260" />
-<img src="https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_expand_description_1.png?raw=true" width="260" />
+<img src="https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_v2.png?raw=true" width="200" />
+<img width="10" />
+<img src="https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_1.png?raw=true" width="200" />
+<img width="10" />
+<img src="https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_expand_description_1.png?raw=true" width="200" />
 
 <!--
 ![Profile Screenshot 1](https://github.com/nori-flutter/flutter-designer-training/blob/master/screencaps/designer_training_profile_light_1.png?raw=true)

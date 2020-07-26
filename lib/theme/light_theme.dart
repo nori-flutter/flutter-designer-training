@@ -44,7 +44,7 @@ class LightTheme implements AppThemeBase {
   Color get primaryBackgroundColor => Colors.white;
 
   @override
-  Color get secondaryBackgroundColor => Colors.orange;
+  Color get secondaryBackgroundColor => Colors.black12;
 
   @override
   Color get primaryDrawerBackgroundColor => primaryBackgroundColor;

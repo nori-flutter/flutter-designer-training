@@ -47,15 +47,15 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   margin: EdgeInsets.zero,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Row(
-//                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                        mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           GFAvatar(
@@ -65,21 +65,45 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                             shape: GFAvatarShape.standard,
                             size: 70,
                           ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Text("Status: ",
+                              style: TextStyle(
+                                  color: AppTheme.current.primaryTextColor,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold)),
+                          Icon(Icons.check_circle, color: Colors.green, size: 26),
+                          Text('Available',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color: AppTheme.current.primaryTextColor)),
                           Expanded(
-                            child: IconButton(
-                              iconSize: 36,
-                              alignment: Alignment.centerRight,
-                              icon: Icon(
-                                _isFavorite ? Icons.star : Icons.star_border,
-                                color: _isFavorite
-                                    ? AppTheme.current.favoriteOnIconColor
-                                    : AppTheme.current.favoriteOffIconColor,
-                              ),
-                              onPressed: () {
-                                setState(() {
-                                  _isFavorite = !_isFavorite;
-                                });
-                              },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                IconButton(
+                                  iconSize: 36,
+                                  alignment: Alignment.centerRight,
+                                  icon: Icon(
+                                    _isFavorite
+                                        ? Icons.star
+                                        : Icons.star_border,
+                                    color: _isFavorite
+                                        ? AppTheme.current.favoriteOnIconColor
+                                        : AppTheme.current.favoriteOffIconColor,
+                                  ),
+                                  onPressed: () {
+                                    setState(() {
+                                      _isFavorite = !_isFavorite;
+                                    });
+                                  },
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -94,9 +118,24 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           )),
-                      SizedBox(
-                        height: 10,
-                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+//                      boxShadow: <BoxShadow>[
+//                        BoxShadow(
+//                            color: Colors.green.withAlpha(50),
+//                            offset: Offset(0, 5),
+//                            blurRadius: 20,
+//                            spreadRadius: 0)
+//                      ],
+                      color: AppTheme.current.secondaryBackgroundColor),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
                       Row(
                         children: <Widget>[
                           Text("Phone: ",
@@ -127,9 +166,18 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                               )),
                         ],
                       ),
-                      SizedBox(
-                        height: 20,
-                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
@@ -145,6 +193,9 @@ class _ProfilePageState extends BasePageState<ProfilePage> {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Container(
 //                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
