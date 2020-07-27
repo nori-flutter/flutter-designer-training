@@ -32,8 +32,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
               style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
-              selectedBottomNavIndex = 0;
-              Navigator.popAndPushNamed(context, ROUTE_HOME);
+              AppRouter.navigateToBottomNavRoute(context, ROUTE_HOME);
             },
           ),
           ListTile(
@@ -47,8 +46,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
               style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
-              selectedBottomNavIndex = 1;
-              Navigator.popAndPushNamed(context, ROUTE_SEARCH);
+              AppRouter.navigateToBottomNavRoute(context, ROUTE_SEARCH);
             },
           ),
           ListTile(
@@ -62,8 +60,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
               style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
-              selectedBottomNavIndex = 2;
-              Navigator.popAndPushNamed(context, ROUTE_PROFILE);
+              AppRouter.navigateToBottomNavRoute(context, ROUTE_PROFILE);
             },
           ),
           ListTile(
@@ -77,8 +74,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
               style: TextStyle(fontSize: AppTheme.drawerMenuItemTextSize, color: AppTheme.current.drawerMenuItemTextColor),
             ),
             onTap: () {
-              selectedBottomNavIndex = 3;
-              Navigator.popAndPushNamed(context, ROUTE_ART);
+              AppRouter.navigateToBottomNavRoute(context, ROUTE_ART);
             },
           ),
           ListTile(
@@ -129,9 +125,13 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
   }
 
   void _onBottomNavigationTapped(int index) {
+    if (index == AppRouter.selectedBottomNavIndex ) {
+      print('_onBottomNavigationTapped - same:${index}');
+      return;
+    }
     setState(() {
-      print('_onBottomNavigationTapped - before:${selectedBottomNavIndex}, after:${index}');
-      selectedBottomNavIndex = index;
+      print('_onBottomNavigationTapped - before:${AppRouter.selectedBottomNavIndex}, after:${index}');
+      AppRouter.selectedBottomNavIndex = index;
       switch (index) {
         case 1:
           Navigator.pushReplacementNamed(
@@ -173,7 +173,7 @@ abstract class BasePageState <T extends StatefulWidget> extends State {
           title: Text('Art'),
         ),
       ],
-      currentIndex: selectedBottomNavIndex,
+      currentIndex: AppRouter.selectedBottomNavIndex,
       showUnselectedLabels: true,
       unselectedItemColor: AppTheme.current.bottomNavIconColor,
       unselectedLabelStyle: AppTheme.current.bottomNavTextStyle,
